@@ -49,7 +49,24 @@ int main(){
 
     // }
     
-    
+        // int mask = 1;
+        
+        // while((mask & n) != n){
+        //     mask = mask << 1;
+        //     mask += 1;
+        // }
+        // return mask ^ n;
+        //         int num,a =1,b;
+        //         cin>>num;
+        // while((a & num) !=num){
+        //     b=num;
+            
+        //     num++;
+
+        // }
+        // cout<<(b ^ a);
+        // // return b ^ a;
+        
     
     
     
