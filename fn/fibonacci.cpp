@@ -6,9 +6,13 @@ int fibonacci(int n){
     {
         return a;
     }
+    if (n==2)
+    {
+        return b;
+    }
     
     int sum;
-    for (int i = 0; i <= n-2; i++)
+    for (int i = 0; i < n-2; i++)
     {
         sum=a+b;
         a=b;
