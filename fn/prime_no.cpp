@@ -22,7 +22,18 @@ int prime(int n){
 
 int main(){
     int a,n;
-    cin>>n;
+    for (int i = 02; i < 100000; i++)
+    {
+        a=prime(i);
+        if (a==1)
+        {
+            cout<<i<<"  ";   
+        }
+        
+        
+    }
+    
+
     a=prime(n);
     cout<<a;
 
