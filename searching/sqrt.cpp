@@ -26,30 +26,79 @@ int mySqrt(int x) {
     return ans;
 }
 int main(){
-    int x ,d;
-    cin>>x>>d;
+    float x ,d;
+    cin>>x;
     int b=mySqrt(x);
     float a=b;
-    for (int i = 0; i < d; i++)
+    for (int i = 0; i < 1; i++)
     {
         
-        int c=pow(10,i+1);
-        float d= 1/c;
-        // cout<<d;
-        a=a+ d;
+    
+        
+        // a=a+ 0.1;
+        // cout<<a;
         while (1)
         {    
+            d=a;
             if (a*a<x)
             {
-                a=a+ 1*d;
+                a=a+0.1;
             }
+            
             if (a*a>x)
             {
                 break;
             }   
+            
         }        
     }
-    cout <<a;
+    a=d;
+    for (int i = 0; i < 1; i++)
+    {
+        
+    
+        
+        // a=a+ 0.1;
+        // cout<<a;
+        while (1)
+        {    
+            d=a;
+            if (a*a<x)
+            {
+                a=a+0.01;
+            }
+            
+            if (a*a>x)
+            {
+                break;
+            }   
+
+        }        
+    }
+    a=d;
+    for (int i = 0; i < 1; i++)
+    {
+        
+    
+        
+        // a=a+ 0.1;
+        // cout<<a;
+        while (1)
+        {    
+            d=a;
+            if (a*a<x)
+            {
+                a=a+0.001;
+            }
+            
+            if (a*a>x)
+            {
+                break;
+            }   
+
+        }        
+    }
+    cout <<d;
 
     return 0;
 }
