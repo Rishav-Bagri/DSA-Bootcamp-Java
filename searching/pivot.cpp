@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int pivot(int arr[]) {
-    int s=0,mid,e=2-1;
+    int s=0,mid,e=6-1;
     
     while(s<=e){
         mid=(s+e)/2;
@@ -13,15 +13,16 @@ int pivot(int arr[]) {
         }
         if (arr[s] == arr[mid]) {
             s=mid;
-            break;
+            return s;
       
         }
         
     }
-    return s;
+    return -1;
+    
 }
 int main(){
-    int arr[2]={2,1};
+    int arr[6]={4,5,0,1,2,3};
     int a=pivot(arr);
     cout<<a;
 

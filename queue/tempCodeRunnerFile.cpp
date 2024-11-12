@@ -1,0 +1,2 @@
+.front()<<endl;
+    q.pop();
